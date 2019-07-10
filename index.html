@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" http-equiv="Refresh" content="3;url=overall.html">
+        <title>HELLO GUAM</title>
+        <link rel="stylesheet" href="stylesheet.css">   
+    </head>
+    <body>
+        
+        <div class="up">
+            <p>HELLO GUAM</p>
+        </div>
+
+        
+
+            <script>
+               
+             var scrollAnimationElm = document.querySelectorAll('.up');
+                var scrollAnimationFunc = function() {
+                for(var i = 0; i < scrollAnimationElm.length; i++) {
+                    var triggerMargin = -1000;
+                    if (window.innerHeight > scrollAnimationElm[i].getBoundingClientRect().top + triggerMargin) {
+                    scrollAnimationElm[i].classList.add('hide');
+                    }
+                    }
+                    }
+                    window.addEventListener('load', scrollAnimationFunc);
+                    window.addEventListener('scroll', scrollAnimationFunc);
+                    
+                
+            </script>
+        
+        </div>
+    </body>
+</html>
+   
