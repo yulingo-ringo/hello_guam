@@ -1,0 +1,117 @@
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p,
+form, input,  {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    font-family: "游ゴシック体", YuGothic;
+    }
+
+.head {
+  width:100vw;
+  height:500px;
+  background-image: url(top2.jpg);
+  background-size: cover;
+  position: relative;
+
+  transform: translate(0, -300px);
+  opacity: 1;
+  transition: all .10s ease;
+  transition-duration: 2s;
+}
+
+.head.show {
+  opacity: 1;
+  transform: none;
+}
+
+.head p {
+  color: white;
+  font-size: 90px;
+  letter-spacing:2vw;
+  opacity: 0.6;
+  position: absolute;
+  top: 40px;
+  left: 4vw;
+}
+
+.float{
+  transform: translate(0, 200px);
+  opacity: 0;
+  transition: all .10s ease;
+  transition-duration: 2s;
+}
+
+.float.show {
+  opacity: 1;
+  transform: none;
+}
+
+
+.name {
+  width: 840px;
+  height: 60px;
+  color: black;
+  font-size: 36px;
+  margin: 160px auto 40px auto;
+}
+
+.pictures{
+  width: 840px;
+  height: 800px;
+  margin: 0 auto;
+}
+
+.details {
+  width: 840px;
+  height: 600px;
+  display: flex;
+  margin: 20px auto;
+}
+
+.details p {
+  font-size: 16px;
+  line-height: 40px;
+  letter-spacing: 4px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h1 {
+  font-size: 40px;
+  line-height: 100px;
+}
+
+h2 {
+  font-size: 40px;
+  line-height: 100px;
+}
+
+
+.left {
+  margin-right: 100px;
+  width: 440px;
+  height: 500px;
+}
+
+
+.content-title{
+  margin-top: 40px;
+}
+
+
+.map {
+  margin-left: 100px;
+}
+
+
+.map-title{
+  margin-top: 440px;
+
+}

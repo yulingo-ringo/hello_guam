@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>HELLO GUAM</title>
+        <link rel="stylesheet" href="each_4.css">   
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="slick.min.js"></script>
+    </head>
+    <body>
+        <div class="head">
+                <p>これぞ、<br>バカンス</p>
+
+        </div>
+        <div class="name float">ウィンダム　ガーデン　グアム</div>
+        <div class="pictures float">
+            <div class="picture"><img src="eachimg/wyn1.jpg" alt=""></div>
+            <div class="picture"><img src="eachimg/wyn2.jpg" alt=""></div>
+            <div class="picture"><img src="eachimg/wyn3.jpg" alt=""></div>
+            <div class="picture"><img src="eachimg/wyn4.jpg" alt=""></div>
+        </div>
+
+        <div class="details float">
+            <div class="left　float">
+                <h1 class="content-title">Service</h1>
+                <p>無料Wifi</p>
+                <p>◯プール</p>
+                <p>◯フィットネスセンター</p>
+                <p>◯無料シャトルバス</p>
+                <p>※LeaLeaトロリーは止まらない</p>
+                <a href="https://www.agoda.com/ja-jp/wyndham-garden-guam/hotel/guam-gu.html?checkin=2019-07-10&los=1&adults=2&rooms=1&cid=-218&searchrequestid=815873c5-ded8-4f3a-b704-64bbcfe710be&travellerType=1&tabbed=true"><p>詳しくはこちら</p></a>
+
+            </div>
+            <div class="map float">
+                <h2 class="map-title float">Map</h2>
+                <iframe class="float" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14271.41278999068!2d144.78350064547143!3d13.491836974183869!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x671f829f5bd243e3%3A0xaa704bf470a907a0!2z44Km44Kj44Oz44OA44OgIOOCrOODvOODh-ODsyDjgrDjgqLjg6A!5e0!3m2!1sja!2sjp!4v1562730820841!5m2!1sja!2sjp" width="500" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+                
+            </div>
+        </div>
+
+        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="slick/slick.min.js"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function(){
+ 　         $('.pictures').slick({
+ 　　       autoplay: true,
+ 　　       adaptiveHeight: true,
+ 　　       dots: true,
+            fade: true,
+        　  });
+            });
+            </script>
+
+    <script>
+            var scrollAnimationElm_1 = document.querySelectorAll('.head');
+            var scrollAnimationFunc_1 = function() {
+            for(var i = 0; i < scrollAnimationElm_1.length; i++) {
+                var triggerMargin = -1000;
+                if (window.innerHeight > scrollAnimationElm_1[i].getBoundingClientRect().top + triggerMargin) {
+                scrollAnimationElm_1[i].classList.add('show');
+                }
+                }
+                }
+                window.addEventListener('load', scrollAnimationFunc_1);
+                window.addEventListener('scroll', scrollAnimationFunc_1);
+                
+            
+            var scrollAnimationElm_2 = document.querySelectorAll('.float');
+            var scrollAnimationFunc_2 = function() {
+            for(var i = 0; i < scrollAnimationElm_2.length; i++) {
+                var triggerMargin = 120;
+                if (window.innerHeight > scrollAnimationElm_2[i].getBoundingClientRect().top + triggerMargin) {
+                scrollAnimationElm_2[i].classList.add('show');
+                }
+                }
+                }
+                window.addEventListener('load', scrollAnimationFunc_2);
+                window.addEventListener('scroll', scrollAnimationFunc_2);
+                
+            
+     </script>
+    </body>
+</html>
+   
