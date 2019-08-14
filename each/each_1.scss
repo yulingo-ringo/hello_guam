@@ -1,0 +1,192 @@
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p,
+form, input,  {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    font-family: "游ゴシック体", YuGothic;
+    }
+
+.head {
+  width:100vw;
+  height:500px;
+  background-image: url(top2.jpg);
+  background-size: cover;
+  position: relative;
+
+  transform: translate(0, -300px);
+  opacity: 1;
+  transition: all .10s ease;
+  transition-duration: 2s;
+
+  &.show {
+    opacity: 1;
+    transform: none;
+  }
+
+  p {
+    color: white;
+    font-size: 90px;
+    letter-spacing:2vw;
+    opacity: 0.6;
+    position: absolute;
+    top: 40px;
+    left: 4vw;
+  }
+
+}
+
+
+.float {
+  transform: translate(0, 200px);
+  opacity: 0;
+  transition: all .10s ease;
+  transition-duration: 2s;
+  &.show {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.hotelintroduce{
+  display: flex;
+  width: 1000px;
+  margin: 300px auto 0 auto;
+
+  .name {
+    width: 840px;
+    height: 60px;
+    color: black;
+    font-size: 36px;
+    margin: 60px 50px 0 auto;
+
+    p {
+      margin-top: 20px;
+      font-size: 14px;
+      opacity: 0.5;
+      line-height: 26px;
+    }
+  }
+
+  .pictures {
+    width: 440px;
+    
+    .picture {
+      height: 300px;
+
+      img {
+        width: 440px;
+        height: 300px;
+        object-fit: cover;
+      }
+    }
+
+  }
+
+}
+
+.details {
+  width: 1000px;
+  height: 600px;
+  margin: 100px auto;
+  display: flex;
+
+  .left {
+    margin-right: 100px;
+    width: 400px;
+    height: 500px;
+    .content-title {
+      
+    }
+  }
+  
+  .map {
+    margin-left: 0px;
+    .map-title {
+      
+    }
+  }
+  
+  p {
+    font-size: 14px;
+    line-height: 40px;
+    letter-spacing: 4px;
+    opacity: 0.5;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h1, h2 {
+  font-size: 32px;
+  line-height: 100px;
+  font-weight: 100;
+  opacity: 0.7;
+}
+
+.arounds {
+  width: 1000px;
+  margin: -40px auto 0 auto;
+
+  p {
+    font-size: 20px;
+    opacity: 0.7;
+    padding-bottom: 20px;
+  }
+
+  .nearbypictures {
+    display: flex;
+    .column {
+      width: 204px;
+      height: 220px;
+      margin: 0;
+      padding: 0;
+      p{
+        opacity: 0.5;
+        font-size: 12px;
+      }
+    }
+  }
+
+  
+
+  img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .nearby, .max100m, .min100m {
+    margin-top: 40px;
+  }
+
+  .nearbypicutres, .max100mpictures {
+    display: flex;
+    
+  }
+
+  .max100mpictures {
+    flex-wrap: wrap;
+    .column {
+      width: 204px;
+      height: 224px;
+      margin: 0;
+      padding: 0;
+      p{
+        opacity: 0.5;
+        font-size: 12px;
+      }
+    }
+    img {
+      margin: 3px 5px 0 0;
+    }
+  }
+
+}
+

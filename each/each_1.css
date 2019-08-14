@@ -1,81 +1,125 @@
+@charset "UTF-8";
 html, body,
 ul, ol, li,
 h1, h2, h3, h4, h5, h6, p,
-form, input,  {
+form, input {
   margin: 0;
   padding: 0;
 }
 
 body {
-    font-family: "游ゴシック体", YuGothic;
-    }
+  font-family: "游ゴシック体", YuGothic;
+}
 
 .head {
-  width:100vw;
-  height:500px;
+  width: 100vw;
+  height: 500px;
   background-image: url(top2.jpg);
   background-size: cover;
   position: relative;
-
-  transform: translate(0, -300px);
+  -webkit-transform: translate(0, -300px);
+          transform: translate(0, -300px);
   opacity: 1;
+  -webkit-transition: all .10s ease;
   transition: all .10s ease;
-  transition-duration: 2s;
+  -webkit-transition-duration: 2s;
+          transition-duration: 2s;
 }
 
 .head.show {
   opacity: 1;
-  transform: none;
+  -webkit-transform: none;
+          transform: none;
 }
 
 .head p {
   color: white;
   font-size: 90px;
-  letter-spacing:2vw;
+  letter-spacing: 2vw;
   opacity: 0.6;
   position: absolute;
   top: 40px;
   left: 4vw;
 }
 
-.float{
-  transform: translate(0, 200px);
+.float {
+  -webkit-transform: translate(0, 200px);
+          transform: translate(0, 200px);
   opacity: 0;
+  -webkit-transition: all .10s ease;
   transition: all .10s ease;
-  transition-duration: 2s;
+  -webkit-transition-duration: 2s;
+          transition-duration: 2s;
 }
 
 .float.show {
   opacity: 1;
-  transform: none;
+  -webkit-transform: none;
+          transform: none;
 }
 
+.hotelintroduce {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 1000px;
+  margin: 300px auto 0 auto;
+}
 
-.name {
+.hotelintroduce .name {
   width: 840px;
   height: 60px;
   color: black;
   font-size: 36px;
-  margin: 160px auto 40px auto;
+  margin: 60px 50px 0 auto;
 }
 
-.pictures{
-  width: 840px;
-  height: 800px;
-  margin: 0 auto;
+.hotelintroduce .name p {
+  margin-top: 20px;
+  font-size: 14px;
+  opacity: 0.5;
+  line-height: 26px;
+}
+
+.hotelintroduce .pictures {
+  width: 440px;
+}
+
+.hotelintroduce .pictures .picture {
+  height: 300px;
+}
+
+.hotelintroduce .pictures .picture img {
+  width: 440px;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .details {
-  width: 840px;
+  width: 1000px;
   height: 600px;
+  margin: 100px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  margin: 20px auto;
+}
+
+.details .left {
+  margin-right: 100px;
+  width: 400px;
+  height: 500px;
+}
+
+.details .map {
+  margin-left: 0px;
 }
 
 .details p {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 40px;
   letter-spacing: 4px;
+  opacity: 0.5;
 }
 
 a {
@@ -83,35 +127,77 @@ a {
   color: black;
 }
 
-h1 {
-  font-size: 40px;
+h1, h2 {
+  font-size: 32px;
   line-height: 100px;
+  font-weight: 100;
+  opacity: 0.7;
 }
 
-h2 {
-  font-size: 40px;
-  line-height: 100px;
+.arounds {
+  width: 1000px;
+  margin: -40px auto 0 auto;
 }
 
-
-.left {
-  margin-right: 100px;
-  width: 440px;
-  height: 500px;
+.arounds p {
+  font-size: 20px;
+  opacity: 0.7;
+  padding-bottom: 20px;
 }
 
+.arounds .nearbypictures {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 
-.content-title{
+.arounds .nearbypictures .column {
+  width: 204px;
+  height: 220px;
+  margin: 0;
+  padding: 0;
+}
+
+.arounds .nearbypictures .column p {
+  opacity: 0.5;
+  font-size: 12px;
+}
+
+.arounds img {
+  width: 200px;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.arounds .nearby, .arounds .max100m, .arounds .min100m {
   margin-top: 40px;
 }
 
-
-.map {
-  margin-left: 100px;
+.arounds .nearbypicutres, .arounds .max100mpictures {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-
-.map-title{
-  margin-top: 440px;
-
+.arounds .max100mpictures {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
+
+.arounds .max100mpictures .column {
+  width: 204px;
+  height: 224px;
+  margin: 0;
+  padding: 0;
+}
+
+.arounds .max100mpictures .column p {
+  opacity: 0.5;
+  font-size: 12px;
+}
+
+.arounds .max100mpictures img {
+  margin: 3px 5px 0 0;
+}
+/*# sourceMappingURL=each_1.css.map */

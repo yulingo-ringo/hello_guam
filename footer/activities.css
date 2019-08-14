@@ -1,0 +1,344 @@
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p,
+form, input, div {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    font-family: "游ゴシック体", YuGothic;
+    }
+
+.wrapper{
+  width: 100vw;
+  height: 400px;
+  
+
+  transform: translate(0, -150px);
+  opacity: 0;
+  transition: all .10s ease;
+  transition-duration: 2s;
+}
+
+.wrapper.show{
+  opacity: 1;
+  transform: none;
+}
+
+.float{
+  transform: translate(0, 100px);
+  opacity: 0;
+  transition: all .5s ease;
+  transition-duration: 1s;
+}
+
+.float.show {
+  opacity: 1;
+  transform: none;
+}
+
+.right{
+  transform: translate(900px, 0);
+  opacity: 1;
+  transition: all .4s ease;
+  transition-duration: 2s;
+}
+
+.right.show {
+  opacity: 1;
+  transform: none;
+}
+
+.left{
+  transform: translate(-900px, 0);
+  opacity: 1;
+  transition: all .4s ease;
+  transition-duration: 2s;
+}
+
+.left.show {
+  opacity: 1;
+  transform: none;
+}
+
+.leftnew{
+  transform: translate(-900px, 0);
+  opacity: 1;
+  transition: all .4s ease;
+  transition-duration: 2s;
+}
+
+.leftnew.show {
+  opacity: 1;
+  transform: none;
+}
+
+.comeup, .comeup1, .comeup2, .comeup3{
+  transform: translate(0, -10px);
+  opacity: 0;
+  transition: all .4s ease;
+  transition-duration: 2s;
+}
+
+.comeup.show, .comeup1.show, .comeup2.show, .comeup3.show{
+  opacity: 1;
+  transform: none;
+}
+
+.head {
+  width:100vw;
+  height:500px;
+  background-image: url(footerimg/title.jpg);
+  background-size: cover;
+  position: relative;
+  
+}
+
+.head h1 {
+  color: white;
+  font-size: 90px;
+  letter-spacing:2vw;
+  opacity: 0.9;
+  position: absolute;
+  top: 60px;
+  left: 4vw;
+}
+
+.title{
+  margin-top: 120px;
+  margin-left: 10vw;
+  margin-bottom: 120px;
+}
+
+h2 {
+  font-size: 140px;
+  font-family: 'Rockwell';
+  font-weight: 100;
+  letter-spacing: 10px;
+  color:#34B1E8;
+}
+
+.right-up {
+  width: 0%;
+  height: 0%;
+  border-top: 12vw solid transparent;
+  border-right: 50vw solid #41A1DD;
+  border-bottom: 12vw solid #41A1DD;
+  border-left: 50vw solid transparent;
+  
+}
+.center {
+  background-color: #41A1DD;
+  width: 100vw;
+  height: 1100px;
+}
+
+.center1{
+  background-color: #41A1DD;
+  width: 100vw;
+  height: 200px;
+}
+
+.right-down {
+  width: 0%;
+  height: 0%;
+  border-bottom: 12vw solid transparent;
+  border-right: 50vw solid #41A1DD;
+  border-top: 12vw solid #41A1DD;
+  border-left: 50vw solid transparent;
+}
+
+.beach {
+  position: relative;
+}
+
+.beach h3 {
+  font-size: 140px;
+  font-family: 'Rockwell';
+  font-weight: 100;
+  letter-spacing: 10px;
+  color:#fff;
+  margin-left: 60vw;
+  position:absolute;
+  top: 280px;
+}
+
+.box1 {
+  width: 36vw;
+  height: 140px;
+  padding: 15px 1vw;
+  
+  margin-top: 60px;
+  margin-left: 31vw;
+  border : 5px dotted #fff;
+  position: relative;
+}
+
+.inside{
+  width: 34vw;
+  height:120px;
+  background-color: #fff;
+  text-decoration: none;
+  padding-left: 2vw;
+  padding-top: 20px;
+  color: black;
+}
+
+a {
+  text-decoration: none;
+}
+
+h5 {
+  font-size: 30px;
+  margin-bottom: 4px;
+}
+ 
+.tumon-bay {
+  margin-top: 0;
+}
+
+.cocos {
+  margin-left: 51vw;
+}
+
+.liti {
+  margin-left: 51vw;
+}
+
+.box1 img{
+  width: 20vw;
+  height: 180px;
+  object-fit: cover;
+  
+  position: absolute;
+  top: -5px ;
+  left:-22vw;
+}
+
+.waterpark {
+  height: 1400px;
+}
+
+.waterpark h3{
+  font-size: 140px;
+  font-family: 'Rockwell';
+  font-weight: 100;
+  letter-spacing: 10px;
+  color:#34B1E8;
+
+}
+
+.box2 {
+  width: 440px;
+  height: 400px;
+  position: relative;
+}
+
+.box3 {
+  width: 300px;
+  height: 80px;
+  background-color: #34B1E8;
+  position: absolute;
+  top: 360px;
+  left: 240px;
+  text-align: center;
+  line-height: 80px;
+  color: white;
+  font-size: 20px;
+  font-family: "游ゴシック" YuGothic;
+}
+
+.box2 img {
+  width: 440px;
+  height: 400px;
+  object-fit: cover;
+}
+
+.left2 {
+  margin-left: 10vw;
+}
+
+.right2 {
+  float:right;
+  margin-right: 10vw;
+}
+
+.pic, .onward, .tarza {
+  height: 300px;
+}
+
+
+
+.pic {
+  margin-top: 60px;
+}
+
+.top {
+  height: 800px;
+  background-image: url(footerimg/photospot.jpg);
+  background-size: cover;
+  text-align:center;
+}
+
+
+.top h3 {
+  font-size: 140px;
+  font-family: 'Rockwell';
+  font-weight: 100;
+  letter-spacing: 10px;
+  color:#fff;
+  line-height: 800px; 
+}
+
+.account {
+  width:960px;
+  margin: 0px auto 80px auto;
+  display:flex;
+}
+
+.account img{
+  border-radius: 50%;
+}
+
+.posts, .followers, .follows {
+  text-align: center;
+  margin: 3vw;
+  font-size: 30px;
+  margin-top: 80px;
+}
+
+.posts span, .followers span, .follows span {
+  opacity: 0.6;
+}
+
+.posts {
+  margin-left: 14vw;
+}
+
+.pictures {
+  width:960px;
+  margin: 0px auto;
+}
+
+.line1, .line2, .line3 {
+  display: flex;
+}
+
+.line1 img, .line2 img, .line3 img {
+  width: 320px;
+  height: 320px;
+  object-fit: cover;
+  margin: 1px;
+  }
+
+h4{
+  font-family: "游ゴシック", YuGothic;
+  font-size: 36px;
+  opacity:0.6;
+  margin-top: 10px;
+}
+
+.photospot {
+  height: 2200px;
+}

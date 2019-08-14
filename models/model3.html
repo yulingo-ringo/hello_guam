@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>HELLO GUAM</title>
+        <link rel="stylesheet" href="model.css">
+        <link rel="stylesheet" href="model1.css">      
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="head">
+                <h1>これが、<br>バカンス</h1>
+            </div>
+        </div>
+        <div class="title">
+                <h2>旅するカメラ女子</h2>
+                <p>海で遊びたいけどゆっくりする日も欲しい！あとかわいい写真撮りたい！というあなたへ</p>
+        </div>
+        <div class="detail">
+            1日目
+            ホテルにチェックインしたらタモンビーチじゃない近場の夕焼けが綺麗に撮れそうなビーチに行く
+            ディナー
+            JCBプラザラウンジに行って情報を入手する
+            Kmartに行ってお買い物
+            2日目
+            色々行くけど割とゆっくりって感じ
+            夜はディナーショー
+            3日目
+            ココス島に行く
+            帰ってからTギャラリアに行く
+            マイクロネシアモールでも楽しそう
+            4日目
+            タモンビーチに行く
+        </div>
+        
+        <script>
+                var scrollAnimationElm_1 = document.querySelectorAll('.wrapper');
+                var scrollAnimationFunc_1 = function() {
+                for(var i = 0; i < scrollAnimationElm_1.length; i++) {
+                    var triggerMargin = -1000;
+                    if (window.innerHeight > scrollAnimationElm_1[i].getBoundingClientRect().top + triggerMargin) {
+                    scrollAnimationElm_1[i].classList.add('show');
+                    }
+                    }
+                    }
+                    window.addEventListener('load', scrollAnimationFunc_1);
+                    window.addEventListener('scroll', scrollAnimationFunc_1);
+                    
+                
+                var scrollAnimationElm_2 = document.querySelectorAll('.float');
+                var scrollAnimationFunc_2 = function() {
+                for(var i = 0; i < scrollAnimationElm_2.length; i++) {
+                    var triggerMargin = 20;
+                    if (window.innerHeight > scrollAnimationElm_2[i].getBoundingClientRect().top + triggerMargin) {
+                    scrollAnimationElm_2[i].classList.add('show');
+                    }
+                    }
+                    }
+                    window.addEventListener('load', scrollAnimationFunc_2);
+                    window.addEventListener('scroll', scrollAnimationFunc_2);
+                    
+                
+         </script>
+    </body>
+</html>
