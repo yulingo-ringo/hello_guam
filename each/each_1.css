@@ -200,4 +200,37 @@ h1, h2 {
 .arounds .max100mpictures img {
   margin: 3px 5px 0 0;
 }
+
+@media screen and (max-width: 1000px) {
+  /*　画面サイズが480pxからはここを読み込む　*/
+  .hotelintroduce {
+    display: block;
+    margin-top: 200px;
+    width: 980px;
+  }
+  .hotelintroduce .name {
+    height: 280px;
+  }
+  .hotelintroduce .pictures {
+    margin: auto;
+  }
+  .details {
+    display: block;
+    height: 1100px;
+    width: 980px;
+  }
+  .details .left {
+    height: 400px;
+    margin: auto;
+  }
+  .details .map {
+    display: block;
+    height: 600px;
+    margin-left: 200px;
+  }
+  .arounds {
+    width: 980px;
+    padding-left: 80px;
+  }
+}
 /*# sourceMappingURL=each_1.css.map */

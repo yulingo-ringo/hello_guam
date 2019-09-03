@@ -1,47 +1,77 @@
-html, body,
-ul, ol, li,
-h1, h2, h3, h4, h5, h6, p,
-form, input, div {
+.upper {
+  height: 800px;
+  border: 1px black;
   margin: 0;
-  padding: 0;
+  color: #fff;
 }
 
-body {
-    font-family: "游ゴシック体", YuGothic;
-    }
-
-.wrapper{
+.upper img {
   width: 100vw;
-  height: 400px;
-  
-
-  transform: translate(0, -150px);
-  opacity: 0;
-  transition: all .10s ease;
-  transition-duration: 2s;
 }
 
-.wrapper.show{
+.upper .doc {
+  margin-top: -160px;
+  margin-left: 20px;
+  padding: 20px 20px;
+}
+
+.upper .doc h1 {
+  font-size: 30px;
   opacity: 1;
-  transform: none;
 }
 
-.head {
-  width:100vw;
-  height:500px;
-  background-image: url(footerimg/title.jpg);
-  background-size: cover;
-  position: relative;
-  
+.upper .doc p {
+  font-size: 16px;
+  opacity: 1;
 }
 
-.head h1 {
-  color: white;
-  font-size: 90px;
-  letter-spacing:2vw;
-  opacity: 0.9;
-  position: absolute;
-  top: 60px;
-  left: 4vw;
+.lower {
+  height: 700px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 40px;
 }
 
+.lower .left {
+  width: 30vw;
+  padding-left: 6vw;
+  border-right: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.lower .left h3 {
+  margin-bottom: 40px;
+}
+
+.lower .left li {
+  list-style: none;
+  line-height: 30px;
+}
+
+.lower .center {
+  width: 40vw;
+  padding-left: 2vw;
+  border-right: 1px solid rgba(0, 0, 0, 0.4);
+  line-height: 30px;
+}
+
+.lower .center h2 {
+  margin-bottom: 40px;
+}
+
+.lower .center h3 {
+  margin-bottom: 12px;
+  margin-top: 30px;
+}
+
+.lower .right {
+  width: 30vw;
+  padding-left: 2vw;
+  padding-right: 6vw;
+  line-height: 30px;
+}
+
+.lower .right h3 {
+  margin-bottom: 40px;
+}
+/*# sourceMappingURL=shops.css.map */

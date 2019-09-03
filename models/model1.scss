@@ -61,6 +61,25 @@ $blue: #41A1DD;
     width: 100vw;
     height: 200px;
   }
+
+  @media screen and (max-width:1000px) { 
+    /*　画面サイズが480pxからはここを読み込む　*/
+    .center-1{
+      height: 1500px;
+    }
+
+    .day1pictures{
+       
+      width: 980px;
+      display: flex;
+      margin: 60px auto;
+      img {
+          width: 220px;
+          height: 200px;
+          margin-right: 10px;
+      }
+    }
+}
   
   .right-down {
     width: 0%;
@@ -84,6 +103,13 @@ $blue: #41A1DD;
       font-size: 40px;
     }
   }
+
+  @media screen and (max-width:1000px) { 
+    /*　画面サイズが480pxからはここを読み込む　*/
+    .title{
+      width: 980px;
+    }
+}
   
   .center1 h3, .center3 h3 {
     text-align: right;
@@ -106,7 +132,23 @@ $blue: #41A1DD;
           height: 200px;
           margin-right: 10px;
       }
+
   }
+  @media screen and (max-width:1000px) { 
+    /*　画面サイズが480pxからはここを読み込む　*/
+
+    .day1pictures{
+       
+      width: 980px;
+      display: flex;
+      margin: 60px 0 60px 0;
+      img {
+          width: 230px;
+          height: 200px;
+          margin-left: 0px;
+      }
+    }
+}
   
   .center2 h3, .center4 h3 {
     font-family: "Rockwell";
@@ -184,6 +226,21 @@ $blue: #41A1DD;
               margin-right: 10px;
           }
       }
+      @media screen and (max-width:1000px) { 
+        /*　画面サイズが480pxからはここを読み込む　*/
+    
+        .day4pictures{
+           
+          width: 980px;
+          display: flex;
+          margin: 60px 0 60px 0;
+          img {
+              width: 230px;
+              height: 200px;
+              margin-left: 0;
+          }
+        }
+    }
   }
 
   

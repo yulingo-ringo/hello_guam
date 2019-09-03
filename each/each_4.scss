@@ -99,11 +99,14 @@ body {
     margin-right: 100px;
     width: 400px;
     height: 500px;
-    .content-title {
-      
+    
+
+  }
+  @media screen and (max-width:1000px) {
+    .left{
+      margin: auto;
     }
   }
-  
   .map {
     margin-left: 300px;
     .map-title {
@@ -192,3 +195,39 @@ h1, h2 {
 
 }
 
+@media screen and (max-width:1000px) { 
+  /*　画面サイズが480pxからはここを読み込む　*/
+  .hotelintroduce{
+    display: block;
+    margin-top: 200px;
+    width: 980px;
+    .name{
+      height: 280px;
+    }
+    .pictures{
+      margin: auto;
+    }
+  }
+
+  .details{
+    display: block;
+    height: 1100px;
+    width: 980px;
+    
+    
+    .left{
+      height: 400px;
+      width: 200px;
+      padding-left: 200px;
+    }
+    .map{
+      display: block;
+      height: 600px;
+      margin-left: 200px;
+    }
+  }
+  .arounds{
+    width: 980px;
+    padding-left: 80px;
+  }
+}

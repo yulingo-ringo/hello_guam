@@ -3,85 +3,70 @@
     <head>
         <meta charset="utf-8">
         <title>HELLO GUAM</title>
+        <link rel='stylesheet' href='https://unpkg.com/ress/dist/ress.min.css'>
         <link rel="stylesheet" href="shops.css">   
     </head>
     <body>
-        <div class="wrapper">
-            <div class="head">
-                <h1>これが、<br>バカンス</h1>
-
-        </div>
-        </div>
-
-        <div class="detail">
-            ブランド品は日本より安い
-            バラマキの王道は人気ブランドのコスメ
-            7大ショッピングモール
-                マイクロネシアモール
-                グアムプレミアアウトレット
-                JPスーパーストア
-                ザ・プラザ
-                T-ギャラリア(MACコスメとか)
-                タモンサンズ
-                アガニアショッピングセンター
-            
-            地元の人気スーパー
-                ペイレス・スーパーマーケットデデド店
-                ローンスターブレッドショップ
-                クーディーズ
-                Kマート
-
-
-            食べもの系
-
-            ステーキ
-                マンハッタンステーキハウスは分厚いステーキが食べられて良いらしい
-                デルモニコ・キッチン&バー
-                ローンスターステーキハウス
-
-            ビーチを見ながら食事ができるお店
-                パパス
-                セイルズバーベキュー・素材の質がいい
-                ロイズグアム
-                THE BEACH & BAR & GRILL(＠ガンビーチ) 
-
-            ヒルトンホテル中のフィッシャーマンズコーブがいいらしい
-            Eggs'n things Guam
-            Pieology Pizzeria
-             Churrasco Brazilian BBQ&Salad Bar
-
-            コストコみたいなお店
-            Cost u less
-
-        </div>
-
-        <script>
-                var scrollAnimationElm_1 = document.querySelectorAll('.wrapper');
-                var scrollAnimationFunc_1 = function() {
-                for(var i = 0; i < scrollAnimationElm_1.length; i++) {
-                    var triggerMargin = -1000;
-                    if (window.innerHeight > scrollAnimationElm_1[i].getBoundingClientRect().top + triggerMargin) {
-                    scrollAnimationElm_1[i].classList.add('show');
-                    }
-                    }
-                    }
-                    window.addEventListener('load', scrollAnimationFunc_1);
-                    window.addEventListener('scroll', scrollAnimationFunc_1);
-                    
+        <div class="upper">
+                <img src="footerimg/tumon-sands-plaza.jpg" alt="">
+                <div class="doc">
+                    <h1>Shopping</h1>
+                    <p>グアムには6大ショッピングモールを初め、色々なお店があります。<br>
+                        お土産、ごはん、スイーツなど用途別にお店を紹介していきます
+                    </p>
+                </div>
                 
-                var scrollAnimationElm_2 = document.querySelectorAll('.float');
-                var scrollAnimationFunc_2 = function() {
-                for(var i = 0; i < scrollAnimationElm_2.length; i++) {
-                    var triggerMargin = 20;
-                    if (window.innerHeight > scrollAnimationElm_2[i].getBoundingClientRect().top + triggerMargin) {
-                    scrollAnimationElm_2[i].classList.add('show');
-                    }
-                    }
-                    }
-                    window.addEventListener('load', scrollAnimationFunc_2);
-                    window.addEventListener('scroll', scrollAnimationFunc_2);
-                    
-                
-         </script>
+        </div>
+        <div class="lower">
+            <div class="left">
+                <h3>ハッシュタグで検索！</h3>
+                <ul>
+                    <li>#お土産</li>
+                    <li>#ご飯</li>
+                    <li>#ブランド品</li>
+                    <li>#ナイトクラブ</li>
+                    <li>#インスタ映え</li>
+                    <li>#島の情報</li>
+                    <li>#楽しくショッピング</li>
+                    <li>#アパレル</li>
+                    <li>#ノベルティ</li>
+                    <li>#ホテルの近く</li>
+                </ul>
+
+            </div>
+            <div class="center">
+                <h2>グアムの大きなショッピングモール</h2>
+                <div class="sixBig">
+                    <h3>6大ショッピングモールについて</h3>
+                    <div class="micro">マイクロネシアモール#楽しくショッピング#アパレル</div>
+                    <div class="gpo">グアムプレミアアウトレット#楽しくショッピング</div>
+                    <div class="jp">JPスーパーストア#お土産</div>
+                    <div class="theplaza">ザプラザ#ブランド品</div>
+                    <div class="t-galla">T-ギャラリア#ブランド品</div>
+                    <div class="tumonsans">タモンサンスプラザ#ブランド品</div>
+                </div>
+                <div class="othershopping">
+                    <h3>そのほかグアムで定番のショップ6選</h3>
+                    <div class="kmart">Kマート#お土産</div>
+                    <div class="agana">アガニャショッピングセンター#ノベルティ</div>
+                    <div class="akanta">アカンタモール#ノベルティ</div>
+                    <div class="abc">ABCストア#お土産</div>
+                    <div class="vonvoyage">ボンボヤージュ#ブランド品</div>
+                    <div class="payless">ペイレススーパーマーケット#ノベルティ</div>
+                    <div class="tumonbay">タモンベイモール</div>
+                </div>
+            </div>
+            <div class="right">
+                <h3>お店の紹介</h3>
+                <div class="shop">JCBプラザ</div>
+                <div class="shop">シュラスコブラジリアンBBQ　#ご飯　#ホテルの近く</div>
+                <div class="shop">ライブハウスグアム　#ホテルの近く</div>
+                <div class="shop">snow monster　#ホテルの近く</div>
+                <div class="shop">the cracked egg　#ホテルの近く</div>
+                <div class="shop">カリフォルニアピザキッチン#ホテルの近く</div>
+                <div class="shop">Fizz& Co #インスタ映え</div>
+                <div class="shop">タモンベイトレードセンター</div>
+            </div>
+        </div>
     </body>
 </html>

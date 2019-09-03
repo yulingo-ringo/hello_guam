@@ -342,3 +342,24 @@ h4{
 .photospot {
   height: 2200px;
 }
+
+@media screen and (max-width:1000px) { 
+  /*　画面サイズが480pxからはここを読み込む　*/
+  .beach h3{
+    margin-left: 40vw;
+    margin-bottom: 40px;
+  }
+
+  .pic{
+    height: 520px;
+  }
+  .tarza{
+    height: 520px;
+  }
+  .onward{
+    height: 520px;
+  }
+  .waterpark{
+    height: 1700px;
+  }
+}
