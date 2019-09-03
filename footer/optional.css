@@ -1,0 +1,160 @@
+@charset "UTF-8";
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: serif;
+  /*background: -moz-linear-gradient(top left, #ccf, #00f ); 
+background: -webkit-linear-gradient(top left,  #ccf, #00f); 
+background: linear-gradient(to bottom right,  #ccf, #00f); */
+}
+
+.wrapper .left {
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  font-size: 130px;
+  height: 1500px;
+  width: 16vw;
+}
+
+.wrapper .right {
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  font-size: 130px;
+  width: 16vw;
+}
+
+.box {
+  font-family: "游ゴシック";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  width: 60vw;
+  height: 140px;
+  margin: 20px auto;
+  background-color: #fff;
+}
+
+.box .nbpr {
+  width: 17%;
+  padding-left: 3%;
+  padding-top: 2%;
+}
+
+.box .nbpr .number {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  line-height: 80px;
+  text-align: center;
+  font-size: 40px;
+  font-family: serif;
+  color: #fff;
+}
+
+.box .nbpr .price {
+  text-align: center;
+  padding-top: 10px;
+  opacity: 0.8;
+  letter-spacing: 1px;
+  width: 80px;
+  height: 80px;
+}
+
+.box .more {
+  width: 80%;
+  position: relative;
+}
+
+.box .more .name {
+  margin-top: 2%;
+  margin-bottom: 1%;
+}
+
+.box .more .about {
+  opacity: 0.8;
+  font-size: 12px;
+}
+
+.box .more .company {
+  opacity: 0.5;
+  font-size: 12px;
+  position: absolute;
+  bottom: 10px;
+  right: 0;
+}
+
+@media screen and (max-width: 1000px) {
+  .box {
+    font-family: "游ゴシック";
+    border: none;
+    width: 60vw;
+    height: 440px;
+    display: block;
+    margin: 20px auto;
+    background-color: #fff;
+  }
+  .box .nbpr {
+    width: 17%;
+    height: 120px;
+    padding-left: 3%;
+    padding-top: 2%;
+    position: relative;
+    right: 0;
+    left: 0;
+    margin: auto;
+  }
+  .box .nbpr .number {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    line-height: 80px;
+    text-align: center;
+    font-size: 40px;
+    font-family: serif;
+    color: #fff;
+  }
+  .box .nbpr .price {
+    text-align: center;
+    padding-top: 10px;
+    opacity: 0.8;
+    letter-spacing: 1px;
+    width: 80px;
+    height: 80px;
+    padding-left: 200px;
+  }
+  .box .more {
+    width: 80%;
+    position: relative;
+    right: 0;
+    left: 0;
+    margin: auto;
+    height: 220px;
+  }
+  .box .more .name {
+    margin-top: 2%;
+    margin-bottom: 1%;
+    font-size: 20px;
+  }
+  .box .more .about {
+    opacity: 0.5;
+    font-size: 16px;
+  }
+  .box .more .company {
+    opacity: 0.5;
+    font-size: 12px;
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+  }
+}
+
+.detail {
+  margin: 40px 0 60px 0;
+  opacity: 0.5;
+  font-size: 12px;
+}
+/*# sourceMappingURL=optional.css.map */

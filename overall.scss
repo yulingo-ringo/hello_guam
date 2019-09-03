@@ -1,0 +1,224 @@
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p,
+form, input, div {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    }
+
+.wrapper{
+  width: 100vw;
+  height: 400px;
+  
+
+  transform: translate(0, -150px);
+  opacity: 0;
+  transition: all .10s ease;
+  transition-duration: 2s;
+}
+
+.wrapper.show{
+  opacity: 1;
+  transform: none;
+}
+
+.head {
+  width:100vw;
+  height:500px;
+  background-image: url(img/title.jpg);
+  background-size: cover;
+  position: relative;
+  
+}
+
+.head h1 {
+  color: white;
+  font-size: 90px;
+  letter-spacing:2vw;
+  opacity: 0.9;
+  position: absolute;
+  top: 60px;
+  left: 4vw;
+}
+
+
+
+.float{
+  transform: translate(0, 200px);
+  opacity: 0;
+  transition: all .10s ease;
+  transition-duration: 2s;
+}
+
+.float.show {
+  opacity: 1;
+  transform: none;
+}
+
+
+.plan-title {
+  width: 840px;
+  height: 50px;
+  margin: 200px auto 30px auto;
+}
+
+h2{
+  font-weight: 100;
+  font-size: 50px;
+  color: black;
+  opacity: 0.8;
+  letter-spacing: 2vw
+}
+
+.schedule{
+  width: 840px;
+  height: 1000px;
+  margin: 60px auto;
+}
+
+.schedule img {
+  margin-top: 36px;
+  width: 840px;
+}
+
+.plans {
+  height: 380px;
+  width: 840px;
+  margin: 200px auto 0 auto;
+}
+
+.plans h2 {
+  letter-spacing: 2vw;
+  margin-top: 20px;
+  margin-bottom: 100px;
+  font-weight: 100;
+}
+
+.plans a {
+  text-decoration: none;
+}
+
+.plans a :hover{
+  opacity:0.5;
+  transition-duration: 0.5s;
+}
+
+
+.plan {
+  width: 840px;
+  height: 120px;
+  background-color: #206db6;
+  color: white;
+  margin: 20px 0;
+  padding: 10px 20px;
+  border-radius: 4px;
+}
+
+h3 {
+  font-size: 30px;
+  font-weight: 100;
+  margin-bottom: 16px;
+}
+
+.plan p {
+  font-weight: 100;
+  font-size: 16px;
+}
+
+.map-title{
+  width: 840px;
+  height: 100px;
+  margin: 240px auto 3px auto;
+}
+
+
+.map-title h2{
+  line-height: 60px;
+}
+
+.map-title h2 span{
+  font-size: 20px;
+  letter-spacing: 1vw;
+}
+
+.map {
+  width: 840px;
+  height: 640px;
+  margin: 60px auto 0px auto;
+}
+
+
+.choose {
+  width: 840px;
+  height: 200px;
+  margin: 40px auto;
+  display: flex;
+}
+.choose a :hover {
+  opacity:0.6;
+  transition-duration: 0.5s;
+}
+.hotel{
+  width: 360px;
+  height: 60px;
+  background-color: #206db6;
+  border-radius: 4px;
+  margin: 20px 0px;
+}
+
+.left {
+  margin-right: 120px;
+}
+
+
+.hotel p{
+  text-align: center;
+}
+
+.choose p{
+  font-size: 20px;
+  letter-spacing: 4px;
+  line-height: 60px;
+  color: white;
+}
+
+footer {
+  font-size: 20px;
+  width: 100vw;
+  height: 400px;
+  background-color: #206db6;
+  color: white;
+}
+
+.footer {
+  width: 840px;
+  height: 400px;
+  margin: 0 auto;
+}
+
+.footer p{
+  margin: 20px 0;
+  letter-spacing: 4px;
+  color: white;
+}
+
+.footer a :hover{
+  letter-spacing: 20px;
+  transition-duration: 2s;
+}
+
+.more {
+  padding-top: 60px;
+  margin-bottom: 20px;
+  letter-spacing: 4vw;
+  font-size: 40px;
+  
+}
+
+a{
+  text-decoration: none;
+}

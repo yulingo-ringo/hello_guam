@@ -3,24 +3,70 @@
     <head>
         <meta charset="utf-8">
         <title>HELLO GUAM</title>
-        <link rel="stylesheet" href="overall.css">   
+        <link rel='stylesheet' href='https://unpkg.com/ress/dist/ress.min.css'>
+        <link rel="stylesheet" href="overall.css" >   
     </head>
     <body>
         <div class="wrapper">
             <div class="head">
-                <p>これが、<br>バカンス</p>
+                <h1>これが、<br>バカンス</h1>
 
         </div>
         </div>
         <div class="plan-title float">
-                <p>Schedule</p>
+                <h2>Schedule</h2>
         </div>
-        <div class="plan float">
+        <div class="schedule float">
             <img src="img/plan.png" >
         </div>
 
+
+        <div class="plans">
+            <h2 class="float">Model Course</h2>
+            <a href="models/model1.html">
+                <div class="plan float">
+                    <h3>Beach Course</h3>
+                    <p>1日目ついてからすぐサイクリング、2日目はココス島、3日目はPIC、4日目は近場のタモンビーチと<br>4/4グアムを遊びつくすコース</p>                                           
+                </div>
+            </a>
+            <a href="models/model2.html">
+                <div class="plan float">
+                    <h3>You can have them all!!</h3>
+                    <p>予定は分刻みだけど当日のノリの余地も残す、<br>マリンスポーツ、インスタ映え、ショッピングまで何も諦めない</p>
+                </div>
+                </a>
+            <!--<a href="models/model3.html">
+                <div class="plan float">
+                    <h3>旅するカメラ女子</h3>
+                    <p>海で遊びたいけどゆっくりする日も欲しい！あとかわいい写真撮りたい！というあなたへ</p>
+                </div>
+            </a>
+            <a href="models/model4.html">
+                <div class="plan float">
+                    <h3>当日考えよ</h3>
+                    <p>たくさん遊びたいけど前もって考えるのはめんどくさい..というあなた<br>
+                        事前予約なしで限界までグアムを満喫するコース</p>
+                </div>
+            </a>
+            <a href="models/model5.html">
+                <div class="plan float">
+                    <h3>グアム大人旅</h3>
+                    <p>とにかくゆったりしたい、ずっとアクティブなのは体力が心配という方向けのコース</p>
+                </div>
+            </a>
+
+            <a href="models/model6.html">
+                <div class="plan float">
+                    <h3>グアム一周付きコース</h3>
+                    <p>せっかくグアムに来たからには歴史にも触れられるコースに行きたい！というあなたへ
+                        <br>島を一周するバスツアー付き</p>
+                </div>
+            </a>-->
+        </div>
+
+
         <div class="map-title float">
-            <p>Map <br><span>possible hotels and nearby city -</span></p>
+            <h2>Map <br><span>possible hotels and nearby city -</span></h2>
         </div>
         <div class="map float">
                 <iframe src="https://www.google.com/maps/d/embed?mid=1kGiP-AFFVKtPppOHtCq8q08jYTQpVKo_" width="840" height="640"></iframe>
@@ -40,8 +86,8 @@
             <div class="footer">
                 <div class="more">And more..</div>
                 <a href="footer/optional.html"><p>Optional Tour</p></a>
-                <a><p>Activities</p></a>
-                <a><p>Foods</p></a>
+                <a href="footer/activities.html"><p>Activities</p></a>
+                <a href="footer/shops.html"><p>Shops</p></a>
             </div>
         </footer>
 
@@ -62,7 +108,7 @@
                 var scrollAnimationElm_2 = document.querySelectorAll('.float');
                 var scrollAnimationFunc_2 = function() {
                 for(var i = 0; i < scrollAnimationElm_2.length; i++) {
-                    var triggerMargin = 120;
+                    var triggerMargin = 20;
                     if (window.innerHeight > scrollAnimationElm_2[i].getBoundingClientRect().top + triggerMargin) {
                     scrollAnimationElm_2[i].classList.add('show');
                     }

@@ -1,0 +1,65 @@
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p,
+form, input, div {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    font-family: "游ゴシック体", YuGothic;
+    }
+
+
+    .wrapper {
+      width: 100vw;
+      height: 400px;
+      -webkit-transform: translate(0, -150px);
+              transform: translate(0, -150px);
+      opacity: 0;
+      -webkit-transition: all .10s ease;
+      transition: all .10s ease;
+      -webkit-transition-duration: 2s;
+              transition-duration: 2s;
+    }
+    
+    .wrapper.show {
+      opacity: 1;
+      -webkit-transform: none;
+              transform: none;
+    }
+    
+    .head {
+      width: 100vw;
+      height: 500px;
+      background-image: url(title.jpg);
+      background-size: cover;
+      position: relative;
+    }
+    
+    .head h1 {
+      color: white;
+      font-size: 90px;
+      letter-spacing: 2vw;
+      opacity: 0.9;
+      position: absolute;
+      top: 60px;
+      left: 4vw;
+    }
+    
+    .float {
+      -webkit-transform: translate(0, 200px);
+              transform: translate(0, 200px);
+      opacity: 0;
+      -webkit-transition: all .10s ease;
+      transition: all .10s ease;
+      -webkit-transition-duration: 2s;
+              transition-duration: 2s;
+    }
+    
+    .float.show {
+      opacity: 1;
+      -webkit-transform: none;
+              transform: none;
+    }
+    

@@ -1,0 +1,291 @@
+$blue: #41A1DD;
+
+.wrapper {
+    width: 100vw;
+    height: 400px;
+    transform: translate(0, -150px);
+    opacity: 0;
+    transition: all .10s ease;
+    transition-duration: 2s;
+    &.show {
+      opacity: 1;
+      transform: none;
+    }
+  }
+  
+  .head {
+    width: 100vw;
+    height: 500px;
+    background-image: url(title.jpg);
+    background-size: cover;
+    position: relative;
+    h1 {
+      color: white;
+      font-size: 90px;
+      letter-spacing: 2vw;
+      opacity: 0.9;
+      position: absolute;
+      top: 60px;
+      left: 4vw;
+    }
+  }
+  
+  .float {
+    transform: translate(0, 200px);
+    opacity: 0;
+    transition: all .10s ease;
+    transition-duration: 2s;
+    &.show {
+      opacity: 1;
+      transform: none;
+    }
+  }
+  
+  .right-up {
+    width: 0%;
+    height: 0%;
+    border-top: 16vw solid transparent;
+    border-right: 50vw solid $blue;
+    border-bottom: 16vw solid $blue;
+    border-left: 50vw solid transparent;
+  }
+  
+  .center {
+    background-color: $blue;
+    width: 100vw;
+    height: 1100px;
+  }
+  
+  .center1 {
+    background-color: $blue;
+    width: 100vw;
+    height: 200px;
+  }
+
+  @media screen and (max-width:1000px) { 
+    /*　画面サイズが480pxからはここを読み込む　*/
+    .center-1{
+      height: 1500px;
+    }
+
+    .day1pictures{
+       
+      width: 980px;
+      display: flex;
+      margin: 60px auto;
+      img {
+          width: 220px;
+          height: 200px;
+          margin-right: 10px;
+      }
+    }
+}
+  
+  .right-down {
+    width: 0%;
+    height: 0%;
+    border-bottom: 16vw solid transparent;
+    border-right: 50vw solid $blue;
+    border-top: 16vw solid $blue;
+    border-left: 50vw solid transparent;
+  }
+  
+  .title {
+    color: $blue;
+    width: 1080px;
+    margin: 240px auto 0 auto;
+    height: 300px;
+    font-family: "Rockwell";
+    h2 {
+      font-size: 100px;
+    }
+    p {
+      font-size: 40px;
+    }
+  }
+
+  @media screen and (max-width:1000px) { 
+    /*　画面サイズが480pxからはここを読み込む　*/
+    .title{
+      width: 980px;
+    }
+}
+  
+  .center1 h3, .center3 h3 {
+    text-align: right;
+    font-family: "Rockwell";
+    font-size: 80px;
+    margin-right: 12vw;
+    position: absolute;
+    top: -100px;
+    right: 0;
+    margin-bottom: 60px;
+  }
+
+  .day1pictures {
+      
+      width: 1000px;
+      display: flex;
+      margin: 60px auto;
+      img {
+          width: 240px;
+          height: 200px;
+          margin-right: 10px;
+      }
+
+  }
+  @media screen and (max-width:1000px) { 
+    /*　画面サイズが480pxからはここを読み込む　*/
+
+    .day1pictures{
+       
+      width: 980px;
+      display: flex;
+      margin: 60px 0 60px 0;
+      img {
+          width: 230px;
+          height: 200px;
+          margin-left: 0px;
+      }
+    }
+}
+  
+  .center2 h3, .center4 h3 {
+    font-family: "Rockwell";
+    font-size: 80px;
+    color: $blue;
+    margin-left: 12vw;
+    margin-top: -160px;
+  }
+  
+  .center1,{
+    color: #ffffff;
+    position: relative;
+    height: 0;
+    p {
+      margin-left: 12vw;
+      font-size: 40px;
+      line-height: 80px;
+    }
+  }
+  
+  .p1, .air {
+    padding-top: 60px;
+  }
+  
+  .center2{
+    height: 1000px;
+    h4 {
+      color: $blue;
+      font-size: 50px;
+      margin-left: 8vw;
+      margin-top: 60px;
+      font-weight: 200;
+    }
+
+    p{
+        color: $blue;
+        font-size: 20px;
+        margin-left: 10vw;
+        margin-top: 60px;
+        font-weight: 200;
+        opacity: 0.8;
+        line-height: 36px;
+
+        span {
+            opacity: 1;
+            font-size: 20px;
+            padding-top: 20px;
+            margin-top: 20px;
+
+            a {
+                color: $blue;
+            }
+        }
+    }
+  }
+
+  .center4 {
+      p{
+        color: $blue;
+        font-size: 26px;
+        margin-left: 10vw;
+        margin-top: 60px;
+        font-weight: 200;
+        line-height: 60px;
+      }
+
+      .day4pictures{
+          display: flex;
+          width: 1000px;
+          margin: 80px auto;
+          img {
+              width: 240px;
+              height: 180px;
+              object-fit: cover;
+              margin-right: 10px;
+          }
+      }
+      @media screen and (max-width:1000px) { 
+        /*　画面サイズが480pxからはここを読み込む　*/
+    
+        .day4pictures{
+           
+          width: 980px;
+          display: flex;
+          margin: 60px 0 60px 0;
+          img {
+              width: 230px;
+              height: 200px;
+              margin-left: 0;
+          }
+        }
+    }
+  }
+
+  
+  
+  .p2 {
+    font-size: 40px;
+    margin-left: 12vw;
+  }
+
+  .center3 {
+    background-color: $blue;
+    width: 100vw;
+    height: 200px;
+
+  }
+
+  .center3{
+    color: #ffffff;
+    position: relative;
+    height: 0;
+    .p2 {
+      margin-left: 6vw;
+      font-size: 50px;
+      line-height: 80px;
+      letter-spacing: 10px;
+      display: flex;
+      margin-top: 40px;
+
+      img {
+          height: 80px;
+          margin-right: 40px;
+      }
+    }
+
+    .beach {
+        width: 1000px;
+        margin: 60px auto 0 auto;
+
+        .beachpictures {
+       
+        
+        img {
+            width: 240px;
+        }
+        }
+    }
+
+}
